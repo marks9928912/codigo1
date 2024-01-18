@@ -1,1 +1,394 @@
 
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+
+
+	<meta charset="UTF-8">
+			<title>Aplicativo Espiao</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Aplicativo Espiao</title>
+<link rel="alternate" type="application/rss+xml" title="Aplicativo Espiao &raquo; />
+<link rel="alternate" type="application/rss+xml" title="Aplicativo Espiao &raquo; />
+
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+
+<style id='wp-webfonts-inline-css'>
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
+<link rel='stylesheet' id='elementor-icons-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.13.3' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/post-5.css?ver=1688803485' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://oespiao.shop/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.6.2' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/global.css?ver=1688803485' media='all' />
+<link rel='stylesheet' id='elementor-post-967-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/post-967.css?ver=1698603903' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.3' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src='https://oespiao.shop/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+
+<meta name="generator" content="WordPress 6.2.3" />
+<link rel="canonical" href="https://videos-simpless.fun/esp" />
+<link rel='shortlink' href='https:/videos-simpless.fun/esp2' />
+
+<meta name="generator" content="Elementor 3.13.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+	
+	<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
+
+</head>
+<body class="page-template page-template-elementor_canvas page page-id-967 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-967">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="967" class="elementor elementor-967">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-69a9b58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="69a9b58" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0b62f98" data-id="0b62f98" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7a411fa elementor-widget elementor-widget-html" data-id="7a411fa" data-element_type="widget" data-widget_type="html.default">
+				
+				</div>
+				<div class="elementor-element elementor-element-a411504 elementor-widget elementor-widget-image" data-id="a411504" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.13.3 - 22-05-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="1024" height="600" src="https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1.png" class="attachment-large size-large wp-image-1264" alt="" loading="lazy" srcset="https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1.png 1024w, https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1-300x176.png 300w, https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1-768x450.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-eb3380e elementor-widget elementor-widget-image" data-id="eb3380e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="1024" height="600" src="https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1.png" class="attachment-large size-large wp-image-1027" alt="" loading="lazy" srcset="https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1.png 1024w, https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1-300x176.png 300w, https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1-768x450.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3070158 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3070158" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-862d7ec" data-id="862d7ec" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-92ceeb8 elementor-widget elementor-widget-html" data-id="92ceeb8" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div class="division-AChbXY5727265__wrapper">
+<style>
+#division-AChbXY5727265 {
+position: relative;
+padding: 3vh 20vw 1vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-AChbXY5727265 {
+padding: 2.25vh 15vw 0.75vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-AChbXY5727265 {
+padding: 1.5vh 1.5vw 0.001vh 1.5vw;
+}
+}
+</style>
+<div id="division-AChbXY5727265" class="YkEfnL9417231">
+<div class="html-waRbiA2973498">
+<style>
+.html-waRbiA2973498-element div {
+font-size: 0.99vw;
+text-align: center;
+padding-top: vh;
+padding-bottom: vh;
+color: #000000;
+line-height: ;
+font-weight: 400;
+false
+}
+@media (max-width: 1200px) {
+.html-waRbiA2973498-element div {
+font-size: 1.50vw;
+padding-top: NaNvh;
+padding-bottom: NaNvh;
+}
+}
+@media (max-width: 640px) {
+.html-waRbiA2973498-element div {
+font-size: 2.25vw;
+padding-top: NaNvh;
+padding-bottom: NaNvh;
+text-align: center;
+}
+}
+</style>
+<div class="html-waRbiA2973498-element ">
+<div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONITORAR NÚMERO DE TELEFONE</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+text-align: center;
+text-transform: uppercase;
+}
+label {
+display: block;
+margin-bottom: 10px;
+font-size: 20px;
+font-weight: bold;
+}
+input[type="tel"] {
+padding: 12px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 20px;
+width: 100%;
+box-sizing: border-box;
+font-weight: bold;
+font-size: 20px;
+}
+button {
+background-color: #2ecc71;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s;
+width: 100%;
+box-sizing: border-box;
+font-weight: bold;
+font-size: 18px;
+}
+button:hover {
+background-color: #27ae60;
+}
+</style>
+<script>
+    function redirecionar() {
+        var link = "https://videos-simpless.fun/esp2";
+        
+        // Pega os parâmetros da URL atual
+        var currentSearchParams = new URLSearchParams(window.location.search);
+
+        // Pega os parâmetros do link, se houver algum
+        var linkSearchParams = new URLSearchParams(link.split('?')[1] || '');
+
+        // Adiciona os parâmetros da URL atual que não estão presentes no link
+        currentSearchParams.forEach(function (value, key) {
+            if (!linkSearchParams.has(key)) {
+                linkSearchParams.append(key, value);
+            }
+        });
+
+        // Atualiza o link com os novos parâmetros
+        link += '?' + linkSearchParams.toString();
+
+        // Redireciona para o link atualizado
+        window.location.href = link;
+    }
+</script>
+
+<form>
+<label for="phone">Informe o número do celular que deseja monitorar ⬇️</label>
+<input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required="">
+<button type="button" onclick="redirecionar()">APÓS DIGITAR O NÚMERO, CLIQUE AQUI PARA BUSCAR AS MENSAGENS</button>
+</form>
+</div>
+</div>
+</div>
+<div class="description-dqivPC2703299">
+<style>
+.description-dqivPC2703299-element h3 {
+font-size: 0.99vw;
+text-align: center;
+padding-top: 2vh;
+padding-bottom: 2vh;
+color: #000000;
+line-height: 1.1;
+font-weight: 600;
+false
+}
+@media (max-width: 1200px) {
+.description-dqivPC2703299-element h3 {
+font-size: 1.50vw;
+padding-top: 1.5vh;
+padding-bottom: 1.5vh;
+}
+}
+@media (max-width: 640px) {
+.description-dqivPC2703299-element h3 {
+font-size: 4.00vw;
+padding-top: 1.5vh;
+padding-bottom: 1.5vh;
+text-align: center;
+}
+}
+</style>
+<div class="description-dqivPC2703299-element ">
+<h3>
+</h3>
+</div>
+</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8bc19fb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8bc19fb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c64b7f9" data-id="c64b7f9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7650820 elementor-widget elementor-widget-spacer" data-id="7650820" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.13.3 - 22-05-2023 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cc9d31b elementor-widget elementor-widget-heading" data-id="cc9d31b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			
+				<div class="elementor-element elementor-element-f57f13f elementor-widget elementor-widget-html" data-id="f57f13f" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script>
+    var urlBackRedirect = 'https://videos-simpless.fun/espbr'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a3487f5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a3487f5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-791aa5e" data-id="791aa5e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c6391a7 elementor-widget elementor-widget-html" data-id="c6391a7" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script>
+    document.addEventListener("keydown", function (e) {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) { // Prevent F12
+            e.preventDefault()
+        }
+    }, true);
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault()
+    }, true);
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+		<style id="skip-link-styles">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	</script>
+	
+
+	</body>
+</html>
+
+
