@@ -1,394 +1,677 @@
 
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR" dir="ltr">
 <head>
-
-
-
-	<meta charset="UTF-8">
-			<title>Aplicativo Espiao</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name='robots' content='max-image-preview:large' />
-<title>Aplicativo Espiao</title>
-<link rel="alternate" type="application/rss+xml" title="Aplicativo Espiao &raquo; />
-<link rel="alternate" type="application/rss+xml" title="Aplicativo Espiao &raquo; />
-
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="data:" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://olhardigital.fun/fv3">
+<meta property="og:title" content="Espaço Seguro">
+<meta property="og:description" content="Espaço Seguro">
+<meta property="og:image" content="https://img.imageboss.me/atm/cdn/format:auto/u/mMaHKP5okpQqr1bVLFFPMr2Fxoy2/l/vYErWe0276614.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Espaço Seguro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+<style>@media (max-width:640px){.atm-hidden-mobile{display:none}}@media (min-width:640px){.atm-hidden-desktop{display:none}}.col-span-1{grid-column: span 1 / span 1;}.col-span-2{grid-column: span 2 / span 2;}.items-center{align-items:center}.grid-cols-6{grid-template-columns: repeat(6, minmax(0, 1fr))}.grid-cols-5{	grid-template-columns: repeat(5, minmax(0, 1fr))}.grid-cols-4{grid-template-columns: repeat(4, minmax(0, 1fr))}.grid-cols-2{grid-template-columns: repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns: repeat(3, minmax(0, 1fr))}.grid-cols-1{grid-template-columns: repeat(1, minmax(0, 1fr))}.grid{display:grid}.basis-1\/2{flex-basis:50%}.flex{display:flex}.gap-1{gap:4px}.gap-2{gap:8px}.gap-4{gap:16px}.gap-6{gap:24px}.gap-12{48px}.gap-24{gap:96px}.justify-center{justify-content:center}.basis-full{flex-basis:100%}html{scroll-behavior:smooth;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}body,center,dd,del,div,dt,em,footer,h1,h2,h3,h4,h5,h6,i,iframe,img,p,q,s,small,span,strike,strong,sub,sup,table,tbody,td,tr,u{margin:-1px 0 0 0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;font-family:Roboto,sans-serif}.u{-moz-user-select:none;-webkit-user-select:none;cursor:default}table{border-collapse:collacse;border-spacing:0}body{line-height:1}body{background-color:#ffffff;overflow-x:hidden}iframe,img,svg{max-width:100%}h1,h1 b,h1 span,h2,h2 b,h2 span,h3,h3 b,h3 span{font-family:Poppins,sans-serif}a{text-decoration:none;font-family:Roboto,sans-serif}a.btn{font-family:Montserrat,sans-serif}em span.lg,em span.md,em span.sm{font-style:italic}@media (max-width:600px){.flex-large,.flex-small{margin-right:0!important;margin-bottom:16px}}.flexrow{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center}.flex-large,.flex-small{flex-basis:100%}.flex-large:last-child,.flex-small:last-child{margin-right:0!important}@media (min-width:600px){.flex-small{flex:1;margin-bottom:0!important;padding-bottom:0!important}.flex-small.half{flex:0 0 calc(1 / 2 * 100%)}.flex-small.one-fifth{flex:0 0 calc(1 / 5 * 100%)}.flex-small.two-fifths{flex:0 0 calc(2 / 5 * 100%)}.flex-small.one-fourth{flex:0 0 calc(1 / 4 * 100%)}.flex-small.two-fourths{flex:0 0 calc(2 / 4 * 100%)}.flex-small.three-fourths{flex:0 0 calc(3 / 4 * 100%)}.flex-small.one-third{flex:0 0 calc(1 / 3 * 100%)}.flex-small.two-thirds{flex:0 0 calc(2 / 3 * 100%)}}@media (min-width:1000px){.flex-large{flex:1;margin-bottom:0}.flex-large.half{flex:0 0 calc(1 / 2 * 100%)}.flex-large.one-fifth{flex:0 0 calc(1 / 5 * 100%)}.flex-large.two-fifths{flex:0 0 calc(2 / 5 * 100%)}.flex-large.one-fourth,.flex-large.two-fourths{flex:0 0 calc(1 / 4 * 100%)}.flex-large.three-fourths{flex:0 0 calc(3 / 4 * 100%)}.flex-large.one-third{flex:0 0 calc(1 / 3 * 100%)}.flex-large.two-thirds{flex:0 0 calc(2 / 3 * 100%)}}@media (min-width:640px){.sm\:gap-1{gap:6px}.sm\:gap-2{gap:12px!important}.sm\:gap-4{gap:24px}.sm\:gap-6{gap:32px}.sm\:gap-12{gap:64px}.sm\:gap-24{gap:128px}.sm\:grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}}</style>
+</head>
+<body id="_mMaHKP5okpQqr1bVLFFPMr2Fxoy2" data-page="_BvSXGVnY3Butm7dmyWOn">
 <style>
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
+.KBivye8564714 {display: none}
+@media (max-width: 640px) {
+html {overflow-x:hidden}
 }
 </style>
-	<style id='wp-block-library-inline-css'>
-:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
-</style>
-
-<style id='wp-webfonts-inline-css'>
-@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
-</style>
-<link rel='stylesheet' id='elementor-icons-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.13.3' media='all' />
-<link rel='stylesheet' id='swiper-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
-<link rel='stylesheet' id='elementor-post-5-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/post-5.css?ver=1688803485' media='all' />
-<link rel='stylesheet' id='elementor-pro-css' href='https://oespiao.shop/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.6.2' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/global.css?ver=1688803485' media='all' />
-<link rel='stylesheet' id='elementor-post-967-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/post-967.css?ver=1698603903' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.3' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src='https://oespiao.shop/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
-
-<meta name="generator" content="WordPress 6.2.3" />
-<link rel="canonical" href="https://videos-simpless.fun/esp" />
-<link rel='shortlink' href='https:/videos-simpless.fun/esp2' />
-
-<meta name="generator" content="Elementor 3.13.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-	
-	<script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
-    }
-</script>
-
-</head>
-<body class="page-template page-template-elementor_canvas page page-id-967 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-967">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="967" class="elementor elementor-967">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-69a9b58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="69a9b58" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0b62f98" data-id="0b62f98" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-7a411fa elementor-widget elementor-widget-html" data-id="7a411fa" data-element_type="widget" data-widget_type="html.default">
-				
-				</div>
-				<div class="elementor-element elementor-element-a411504 elementor-widget elementor-widget-image" data-id="a411504" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.13.3 - 22-05-2023 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="1024" height="600" src="https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1.png" class="attachment-large size-large wp-image-1264" alt="" loading="lazy" srcset="https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1.png 1024w, https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1-300x176.png 300w, https://oespiao.shop/wp-content/uploads/2023/07/Para-ver-as-mensagens-digite-o-numero-de-quem-voce-quer-monitorar-no-campo-abaixo-1-768x450.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-eb3380e elementor-widget elementor-widget-image" data-id="eb3380e" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="1024" height="600" src="https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1.png" class="attachment-large size-large wp-image-1027" alt="" loading="lazy" srcset="https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1.png 1024w, https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1-300x176.png 300w, https://oespiao.shop/wp-content/uploads/2023/06/Design-sem-nome-1-768x450.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-3070158 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3070158" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-862d7ec" data-id="862d7ec" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-92ceeb8 elementor-widget elementor-widget-html" data-id="92ceeb8" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<div class="division-AChbXY5727265__wrapper">
+<div class="division-dBnQCl4569498__wrapper">
 <style>
-#division-AChbXY5727265 {
+#division-dBnQCl4569498 {
+border: none;
+border-radius: ;
+margin: 0;
 position: relative;
-padding: 3vh 20vw 1vh 20vw;
-background-color: #ffffff;
+padding: 8vh 20vw 3vh 20vw;
+background-color: #3B5998;
 }
 @media (max-width:1200px) {
-#division-AChbXY5727265 {
-padding: 2.25vh 15vw 0.75vh 15vw;
+#division-dBnQCl4569498 {
+padding: 6vh 15vw 2.25vh 15vw;
+margin: 0;
 }
 }
 @media (max-width:600px) {
-#division-AChbXY5727265 {
-padding: 1.5vh 1.5vw 0.001vh 1.5vw;
+#division-dBnQCl4569498 {
+margin: 0;
+padding: 6vh 1.5vw 1.5vh 1.5vw;
 }
 }
 </style>
-<div id="division-AChbXY5727265" class="YkEfnL9417231">
-<div class="html-waRbiA2973498">
+<div id="division-dBnQCl4569498" class="gIxIyE8485160">
+<div class="image-GujKdS8101963">
 <style>
-.html-waRbiA2973498-element div {
-font-size: 0.99vw;
-text-align: center;
-padding-top: vh;
-padding-bottom: vh;
-color: #000000;
-line-height: ;
-font-weight: 400;
-false
+.image-GujKdS8101963-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0.25vh;
+margin-top: 0.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
 }
 @media (max-width: 1200px) {
-.html-waRbiA2973498-element div {
-font-size: 1.50vw;
-padding-top: NaNvh;
-padding-bottom: NaNvh;
+.image-GujKdS8101963-element img {
+max-width: 18%;
 }
 }
-@media (max-width: 640px) {
-.html-waRbiA2973498-element div {
-font-size: 2.25vw;
-padding-top: NaNvh;
-padding-bottom: NaNvh;
-text-align: center;
+@media (max-width: 600px) {
+.image-GujKdS8101963-element img {
+max-width: 80%;
+margin-left:auto;margin-right:auto;
 }
 }
 </style>
-<div class="html-waRbiA2973498-element ">
-<div>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MONITORAR NÚMERO DE TELEFONE</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+<div class="image-GujKdS8101963-element">
+<img loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/mMaHKP5okpQqr1bVLFFPMr2Fxoy2/Pictures/dGBEMb8174220.jpeg" alt="">
+</div>
+</div>
+</div>
+</div>
+<div class="division-ujQwdc0262945__wrapper">
 <style>
-body {
-font-family: 'Open Sans', sans-serif;
-font-size: 16px;
-text-align: center;
-text-transform: uppercase;
-}
-label {
-display: block;
-margin-bottom: 10px;
-font-size: 20px;
-font-weight: bold;
-}
-input[type="tel"] {
-padding: 12px;
-border-radius: 5px;
-border: 1px solid #ccc;
-margin-bottom: 20px;
-width: 100%;
-box-sizing: border-box;
-font-weight: bold;
-font-size: 20px;
-}
-button {
-background-color: #2ecc71;
-color: #fff;
+#division-ujQwdc0262945 {
 border: none;
-border-radius: 5px;
-padding: 10px 20px;
-cursor: pointer;
-transition: background-color 0.3s;
-width: 100%;
-box-sizing: border-box;
-font-weight: bold;
-font-size: 18px;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
 }
-button:hover {
-background-color: #27ae60;
+@media (max-width:1200px) {
+#division-ujQwdc0262945 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-ujQwdc0262945 {
+margin: 0;
+padding: 0.001vh 1.5vw 1.5vh 1.5vw;
+}
 }
 </style>
-<script>
-    function redirecionar() {
-        var link = "https://videos-simpless.fun/esp2";
-        
-        // Pega os parâmetros da URL atual
-        var currentSearchParams = new URLSearchParams(window.location.search);
-
-        // Pega os parâmetros do link, se houver algum
-        var linkSearchParams = new URLSearchParams(link.split('?')[1] || '');
-
-        // Adiciona os parâmetros da URL atual que não estão presentes no link
-        currentSearchParams.forEach(function (value, key) {
-            if (!linkSearchParams.has(key)) {
-                linkSearchParams.append(key, value);
-            }
-        });
-
-        // Atualiza o link com os novos parâmetros
-        link += '?' + linkSearchParams.toString();
-
-        // Redireciona para o link atualizado
-        window.location.href = link;
-    }
-</script>
-
-<form>
-<label for="phone">Informe o número do celular que deseja monitorar ⬇️</label>
-<input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required="">
-<button type="button" onclick="redirecionar()">APÓS DIGITAR O NÚMERO, CLIQUE AQUI PARA BUSCAR AS MENSAGENS</button>
-</form>
-</div>
-</div>
-</div>
-<div class="description-dqivPC2703299">
+<div id="division-ujQwdc0262945" class="rbHrFP8485160">
+<div class="image-IRQetn8184471">
 <style>
-.description-dqivPC2703299-element h3 {
+.image-IRQetn8184471-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0.25vh;
+margin-top: 0.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
+}
+@media (max-width: 1200px) {
+.image-IRQetn8184471-element img {
+max-width: 18%;
+}
+}
+@media (max-width: 600px) {
+.image-IRQetn8184471-element img {
+max-width: 47%;
+margin-left:auto;margin-right:auto;
+}
+}
+</style>
+<div class="image-IRQetn8184471-element">
+<img loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/mMaHKP5okpQqr1bVLFFPMr2Fxoy2/Pictures/YzsYHD8310723.png" alt="">
+</div>
+</div>
+</div>
+</div>
+<div class="division-gFWKbR0314985__wrapper">
+<style>
+#division-gFWKbR0314985 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-gFWKbR0314985 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-gFWKbR0314985 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-gFWKbR0314985" class="qsIDPB8485161">
+<style>
+.video-rINWSI0323075 {
+border: none;
+box-shadow: none;
+border-radius: undefined;
+}
+.video-rINWSI0323075 #smartplayer {
+border-radius: undefined !important;
+}
+video.smartplayer-video {
+border-radius: 0px !important;
+}
+</style>
+<div class="video-rINWSI0323075">
+<div id="vid_65c970114e63b90009fdaf04" style="position:relative;width:100%;padding: 56.25% 0 0;"><img decoding="async" id="thumb_65c970114e63b90009fdaf04" src="https://images.converteai.net/be5c387b-f2c3-41b8-87e2-c73479dad482/players/65c970114e63b90009fdaf04/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_65c970114e63b90009fdaf04" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_65c970114e63b90009fdaf04">var s=document.createElement("script");s.src="https://scripts.converteai.net/be5c387b-f2c3-41b8-87e2-c73479dad482/players/65c970114e63b90009fdaf04/player.js",s.async=!0,document.head.appendChild(s);</script>
+</div>
+</div>
+
+<a href="https://go.perfectpay.com.br/PPU38CNLQEE" title="ACESSAR FACEBOOK SAFESPACE  (Últimas 12 Vagas)" target="_parent" class="smartplayer-call-action--link smartplayer-call-action-transfer-utm smartplayer-click-event">ACESSAR FACEBOOK SAFESPACE  (Últimas 12 Vagas)</a>
+
+</div>
+</div>
+<div class="text-XcrSrr8415334">
+<style>
+.text-XcrSrr8415334-element p {
 font-size: 0.99vw;
 text-align: center;
 padding-top: 2vh;
 padding-bottom: 2vh;
 color: #000000;
 line-height: 1.1;
-font-weight: 600;
+font-weight: 400;
 false
 }
 @media (max-width: 1200px) {
-.description-dqivPC2703299-element h3 {
+.text-XcrSrr8415334-element p {
 font-size: 1.50vw;
 padding-top: 1.5vh;
 padding-bottom: 1.5vh;
 }
 }
 @media (max-width: 640px) {
-.description-dqivPC2703299-element h3 {
-font-size: 4.00vw;
+.text-XcrSrr8415334-element p {
+font-size: 2.25vw;
 padding-top: 1.5vh;
 padding-bottom: 1.5vh;
 text-align: center;
 }
 }
 </style>
-<div class="description-dqivPC2703299-element ">
-<h3>
-</h3>
+<style>
+  #contador {
+    font-size: 16px;
+    text-align: center;
+  }
+</style>
+<div id="contador">
+  350 pessoas estão assistindo esse vídeo agora
+</div>
+
+<script>
+function atualizarContador() {
+  var contador = document.getElementById("contador");
+  var numeroAtual = parseInt(contador.innerText);
+  var aumento = Math.floor(Math.random() * 3) + 1; // Aumenta de 1 a 3 a cada atualização
+  var novoNumero = numeroAtual + aumento;
+  
+  contador.innerText = novoNumero + " pessoas estão assistindo esse vídeo agora";
+
+  setTimeout(atualizarContador, Math.floor(Math.random() * 3000) + 2000); // Atualiza a cada 2-3 segundos
+}
+
+atualizarContador(); // Inicia o contador
+</script>
+<style>
+#division-uwFGKc0350822 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-uwFGKc0350822 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-uwFGKc0350822 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-uwFGKc0350822" class="KaLoRB8485161">
 </div>
 </div>
+<div class="division-ldYwsk0357206__wrapper">
+<style>
+#division-ldYwsk0357206 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-ldYwsk0357206 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-ldYwsk0357206 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-ldYwsk0357206" class="dXflzK8485161">
 </div>
-</div>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-8bc19fb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8bc19fb" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c64b7f9" data-id="c64b7f9" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-7650820 elementor-widget elementor-widget-spacer" data-id="7650820" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.13.3 - 22-05-2023 */
-.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}</style>		<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-cc9d31b elementor-widget elementor-widget-heading" data-id="cc9d31b" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			
-				<div class="elementor-element elementor-element-f57f13f elementor-widget elementor-widget-html" data-id="f57f13f" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<script>
-    var urlBackRedirect = 'https://videos-simpless.fun/espbr'; // lembre-se de usar a url sem espaços
-    // não altere nada abaixo dessa linha
-    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
-    history.pushState({}, "", location.href);
-    history.pushState({}, "", location.href);
-    window.onpopstate = function () {
-        setTimeout(function () {
-            location.href = urlBackRedirect;
-        }, 1);
-    };
-</script>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-a3487f5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a3487f5" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-791aa5e" data-id="791aa5e" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-c6391a7 elementor-widget elementor-widget-html" data-id="c6391a7" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<script>
-    document.addEventListener("keydown", function (e) {
-        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) { // Prevent F12
-            e.preventDefault()
-        }
-    }, true);
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault()
-    }, true);
-</script>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-							</div>
-		
-		<style id="skip-link-styles">
-		.skip-link.screen-reader-text {
-			border: 0;
-			clip: rect(1px,1px,1px,1px);
-			clip-path: inset(50%);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
-			position: absolute !important;
-			width: 1px;
-			word-wrap: normal !important;
-		}
-
-		.skip-link.screen-reader-text:focus {
-			background-color: #eee;
-			clip: auto !important;
-			clip-path: none;
-			color: #444;
-			display: block;
-			font-size: 1em;
-			height: auto;
-			left: 5px;
-			line-height: normal;
-			padding: 15px 23px 14px;
-			text-decoration: none;
-			top: 5px;
-			width: auto;
-			z-index: 100000;
-		}
-	</style>
-		<script>
-	( function() {
-		var skipLinkTarget = document.querySelector( 'main' ),
-			sibling,
-			skipLinkTargetID,
-			skipLink;
-
-		// Early exit if a skip-link target can't be located.
-		if ( ! skipLinkTarget ) {
-			return;
-		}
-
-		// Get the site wrapper.
-		// The skip-link will be injected in the beginning of it.
-		sibling = document.querySelector( '.wp-site-blocks' );
-
-		// Early exit if the root element was not found.
-		if ( ! sibling ) {
-			return;
-		}
-
-		// Get the skip-link target's ID, and generate one if it doesn't exist.
-		skipLinkTargetID = skipLinkTarget.id;
-		if ( ! skipLinkTargetID ) {
-			skipLinkTargetID = 'wp--skip-link--target';
-			skipLinkTarget.id = skipLinkTargetID;
-		}
-
-		// Create the skip link.
-		skipLink = document.createElement( 'a' );
-		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
-		skipLink.href = '#' + skipLinkTargetID;
-		skipLink.innerHTML = 'Skip to content';
-
-		// Inject the skip link.
-		sibling.parentElement.insertBefore( skipLink, sibling );
-	}() );
-	</script>
-	
-
-	</body>
+</div>
+<div class="division-nnqGXJ1418739__wrapper">
+<style>
+#division-nnqGXJ1418739 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-nnqGXJ1418739 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-nnqGXJ1418739 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-nnqGXJ1418739" class="JxIwRH8485161">
+</div>
+</div>
+<div class="division-hpycdu1418331__wrapper">
+<style>
+#division-hpycdu1418331 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-hpycdu1418331 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-hpycdu1418331 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-hpycdu1418331" class="CBsKSQ8485162">
+</div>
+</div>
+<div class="division-xbAriF1462270__wrapper">
+<style>
+#division-xbAriF1462270 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-xbAriF1462270 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-xbAriF1462270 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-xbAriF1462270" class="zzRmGS8485162">
+</div>
+</div>
+<div class="division-RRpXsD1460093__wrapper">
+<style>
+#division-RRpXsD1460093 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-RRpXsD1460093 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-RRpXsD1460093 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-RRpXsD1460093" class="DqJKLG8485162">
+</div>
+</div>
+<div class="division-AlmQhb1459971__wrapper">
+<style>
+#division-AlmQhb1459971 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-AlmQhb1459971 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-AlmQhb1459971 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-AlmQhb1459971" class="AazNWl8485162">
+</div>
+</div>
+<div class="division-fvvcIf1459816__wrapper">
+<style>
+#division-fvvcIf1459816 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-fvvcIf1459816 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-fvvcIf1459816 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-fvvcIf1459816" class="wuNkqC8485162">
+</div>
+</div>
+<div class="division-jwwIrr1459687__wrapper">
+<style>
+#division-jwwIrr1459687 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-jwwIrr1459687 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-jwwIrr1459687 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-jwwIrr1459687" class="WcNmbW8485163">
+</div>
+</div>
+<div class="division-mlegLS1459535__wrapper">
+<style>
+#division-mlegLS1459535 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-mlegLS1459535 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-mlegLS1459535 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-mlegLS1459535" class="iprakJ8485163">
+</div>
+</div>
+<div class="division-bzbpNE1551932__wrapper">
+<style>
+#division-bzbpNE1551932 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-bzbpNE1551932 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-bzbpNE1551932 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-bzbpNE1551932" class="AuCuKQ8485163">
+</div>
+</div>
+<div class="division-KXMtFD1551674__wrapper">
+<style>
+#division-KXMtFD1551674 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-KXMtFD1551674 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-KXMtFD1551674 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-KXMtFD1551674" class="QJCbvm8485164">
+</div>
+</div>
+<div class="division-GErnLj1550592__wrapper">
+<style>
+#division-GErnLj1550592 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #3B5998;
+}
+@media (max-width:1200px) {
+#division-GErnLj1550592 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-GErnLj1550592 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-GErnLj1550592" class="HLdjYY8485164">
+</div>
+</div>
+<div class="division-QQkGeu1761886__wrapper">
+<style>
+#division-QQkGeu1761886 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #3B5998;
+}
+@media (max-width:1200px) {
+#division-QQkGeu1761886 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-QQkGeu1761886 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-QQkGeu1761886" class="BNCHrr8485164">
+</div>
+</div>
+<div class="division-bLHjbp1550280__wrapper">
+<style>
+#division-bLHjbp1550280 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #3B5998;
+}
+@media (max-width:1200px) {
+#division-bLHjbp1550280 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-bLHjbp1550280 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-bLHjbp1550280" class="cadtlI8485165">
+</div>
+</div>
+<div class="division-plfbSm1459231__wrapper">
+<style>
+#division-plfbSm1459231 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #3B5998;
+}
+@media (max-width:1200px) {
+#division-plfbSm1459231 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-plfbSm1459231 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-plfbSm1459231" class="BtnYcD8485165">
+</div>
+</div>
+<div class="division-Cuktfn1459092__wrapper">
+<style>
+#division-Cuktfn1459092 {
+border: none;
+border-radius: ;
+margin: 0;
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #3B5998;
+}
+@media (max-width:1200px) {
+#division-Cuktfn1459092 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+margin: 0;
+}
+}
+@media (max-width:600px) {
+#division-Cuktfn1459092 {
+margin: 0;
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div id="division-Cuktfn1459092" class="PEoRgt8485165">
+</div>
+</div>
+<script src="/safe3/js/CIhowk2393610.js" charset="utf-8"></script>
+<script>var back_redirect_back_link="https://videos-simpless.fun/safespaceredirect"+location.search;history.pushState({},"",location.href),history.pushState({},"",location.href),window.addEventListener("popstate",(function(t){t.state&&setTimeout((function(){location.href=back_redirect_back_link}),1)}),!1);</script>
+</body>
 </html>
-
-
